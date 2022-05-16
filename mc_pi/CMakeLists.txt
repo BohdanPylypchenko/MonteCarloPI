@@ -6,9 +6,11 @@ set(CMAKE_CXX_STANDARD 11)
 
 set(HEADER_FILES
         vector/vector.h
+        mc_pi/mc_pi.h
         )
 set(SOURCE_FILES
         vector/vector.c
+        mc_pi/mc_pi.c
         )
 
 add_library(MonteCarlo_PI STATIC ${SOURCE_FILES} ${HEADER_FILES})

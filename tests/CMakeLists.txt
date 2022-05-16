@@ -1,6 +1,7 @@
 project(Tests)
 
-add_executable(Google_Tests_run vector_test.cpp)
+add_executable(Google_Tests_run vector_test.cpp
+                                mc_pi_test.cpp)
 
 target_link_libraries(Google_Tests_run MonteCarlo_PI)
 
