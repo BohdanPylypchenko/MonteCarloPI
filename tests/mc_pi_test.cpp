@@ -16,8 +16,8 @@ TEST(mc_pi, stress) {
     long double deviation;
     for (int i = 6; i < 10; i++) {
         pi = mc_pi((int)pow(10, i));
-        deviation = abs(pi - 3.14);
-        ASSERT_LT(deviation, 0.025);
+        deviation = abs(pi - M_PI);
+        ASSERT_LT(deviation, 0.0015);
     }
 }
 
